@@ -53,5 +53,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         bind.unbind();
+        Toast.makeText(this,"解除butterknife",Toast.LENGTH_SHORT).show();
     }
 }
